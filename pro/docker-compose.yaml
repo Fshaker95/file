@@ -1,0 +1,7 @@
+services:
+  redis:
+    container_name: enpm818t-final-project-redis
+    image: redis/redis-stack:7.4.0-v3
+    ports:
+      - 6379:6379
+    # run redis-cli: `docker exec -it enpm818t-final-project-redis redis-cli`

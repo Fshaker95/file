@@ -1,0 +1,8 @@
+# Build
+docker build -t redis-bloom .
+
+# Run, binding container port 6379 -> host port 6379
+docker run -d --name kv-redis -p 6379:6379 redis-bloom
+
+# Use redis
+redis-cli
